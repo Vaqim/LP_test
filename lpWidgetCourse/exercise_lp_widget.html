@@ -8,6 +8,10 @@
   <body>
     <script>
       lpTag.agentSDK.init();
+      const selfUrl = new URL(document.URL);
+      const userInput = selfUrl.searchParams("userInput");
+
+      console.log(userInput);
     </script>
 
     <h1>Hello from widget</h1>
